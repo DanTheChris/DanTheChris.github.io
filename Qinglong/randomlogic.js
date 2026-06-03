@@ -1,3 +1,5 @@
+document.getElementById("RandomiseBut").addEventListener("click", ChangeMoveTypes)
+
 function InitiateMoveTypes() //Creates and returns initial 2D list of sequences [x] and moves withing sequences [y]
 {
 
@@ -78,3 +80,4 @@ function ChangeMoveTypes(){
     document.getElementById('type_3').innerHTML = '<h4>' + mySequence[2] + '</h4>';
     document.getElementById('type_4').innerHTML = '<h4>' + mySequence[3] + '</h4>';
 };
+
