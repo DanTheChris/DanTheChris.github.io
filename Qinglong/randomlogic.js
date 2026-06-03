@@ -1,4 +1,5 @@
-function InitiateMoveTypes(){
+function InitiateMoveTypes() //Creates and returns initial 2D list of sequences [x] and moves withing sequences [y]
+{
 
     var input = `Kick, Strike, Strike, Clinch
     Kick, Strike, Strike, Takedown
@@ -67,10 +68,10 @@ function DetermineSubtypes(thisSequence){
 
 
 function ChangeMoveTypes(){
-    mySequences = InitiateMoveTypes();
+    mySequences = InitiateMoveTypes(); //Creates initial 2D list of sequences [x] and moves withing sequences [y]
 
-    mySequence = mySequences[Math.floor(Math.random() * mySequences.length)];
-    mySubsequence = DetermineSubtypes(mySequence);
+    mySequence = mySequences[Math.floor(Math.random() * mySequences.length)]; //Picks a sequence out at random with equal weighting
+    //mySubsequence = DetermineSubtypes(mySequence);
     
     document.getElementById('type_1').innerHTML = '<h4>' + mySequence[0] + '</h4>';
     document.getElementById('type_2').innerHTML = '<h4>' + mySequence[1] + '</h4>';
